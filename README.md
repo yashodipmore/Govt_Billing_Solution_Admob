@@ -1,5 +1,4 @@
-# Government Billing Solution MVP - Vehicle Maintenance
-
+# Government Billing Solution MVP
 A comprehensive cross-platform mobile application built with Ionic React for government billing and invoice management with advanced spreadsheet capabilities powered by SocialCalc integration.
 
 ![Ionic Version](https://img.shields.io/badge/Ionic-8.6.5-blue.svg)
