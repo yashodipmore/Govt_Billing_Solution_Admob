@@ -289,8 +289,7 @@ const Home: React.FC = () => {
           </IonTitle>
         </IonToolbar>
 
-        {/* Menu FAB button - moved higher to avoid ad overlap */}
-        <IonFab vertical="bottom" horizontal="end" slot="fixed" style={{ bottom: '80px' }}>
+        <IonFab vertical="bottom" horizontal="end" slot="fixed">
           <IonFabButton type="button" onClick={() => setShowMenu(true)}>
             <IonIcon icon={menu} />
           </IonFabButton>

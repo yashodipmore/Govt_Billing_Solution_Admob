@@ -39,15 +39,3 @@ ion-toolbar ion-icon[title="Redo"]:active {
   transform: scale(0.92);
   opacity: 0.8;
 }
-
-/* Menu styles to account for banner ad */
-.menu-with-ad-padding {
-  --height: calc(100% - 60px); /* Leave space for ad */
-  margin-bottom: 60px !important; /* Match the height of the ad */
-  --max-height: calc(100% - 60px) !important;
-}
-
-/* Add padding to make sure buttons aren't hidden */
-ion-action-sheet.menu-with-ad-padding .action-sheet-container {
-  padding-bottom: 80px !important;
-}

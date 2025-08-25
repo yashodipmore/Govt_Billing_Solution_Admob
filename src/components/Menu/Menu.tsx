@@ -11,7 +11,6 @@ import { useAuth } from "../../contexts/AuthContext";
 import { authService } from "../../services/authService";
 import { useHistory } from "react-router-dom";
 import { exportAsCsv as exportCsvUtil, exportAsPDF as exportPdfUtil, sharePDF as sharePdfUtil } from "../../utils/exportUtils";
-import './Menu.css';
 
 const Menu: React.FC<{
   showM: boolean;
@@ -240,7 +239,6 @@ const Menu: React.FC<{
         keyboardClose
         isOpen={props.showM}
         onDidDismiss={() => props.setM()}
-        className="menu-with-ad-padding"
         buttons={[
           {
             text: "Save",

@@ -60,23 +60,3 @@
 .encryption-success-toast {
   animation: secureAnimation 0.3s ease-out forwards;
 }
-
-/* Fix for action sheet to avoid banner ad */
-.menu-with-ad-padding::part(content) {
-  margin-bottom: 60px;
-}
-
-/* Ensure the action sheet buttons don't get cut off */
-.menu-with-ad-padding ion-backdrop {
-  opacity: 0.4 !important;
-}
-
-/* Make the action sheet buttons more visible */
-.menu-with-ad-padding .action-sheet-button {
-  margin-bottom: 2px;
-}
-
-/* Style for the last item in the action sheet */
-.menu-with-ad-padding .action-sheet-button:last-child {
-  margin-bottom: 70px;
-}
