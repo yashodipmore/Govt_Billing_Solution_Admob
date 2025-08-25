@@ -1,0 +1,82 @@
+/* Menu.css */
+.password-protection-alert {
+  --backdrop-opacity: 0.85;
+  --background: #f9f9f9;
+  --box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+.password-protection-alert::part(header) {
+  padding-bottom: 0;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.password-protection-alert::part(sub-title) {
+  color: #7f8c8d;
+  font-size: 14px;
+  padding-bottom: 8px;
+}
+
+.password-protection-alert::part(message) {
+  color: #34495e;
+}
+
+.password-alert-input {
+  margin-top: 8px;
+  --padding-start: 12px;
+  --padding-end: 12px;
+  --border-radius: 8px;
+  --background: #f2f4f8;
+  --placeholder-color: #7f8c8d;
+  --placeholder-opacity: 0.7;
+  --border-color: #dfe6e9;
+}
+
+.password-alert-input:focus {
+  --background: #fff;
+  --border-color: #3880ff;
+}
+
+.password-alert-button-save {
+  --background: #3880ff;
+  --background-hover: #2d6ed6;
+  --color: white;
+  --border-radius: 8px;
+  font-weight: 500;
+}
+
+.password-alert-button-cancel {
+  --color: #7f8c8d;
+  --border-radius: 8px;
+}
+
+/* Animation for the encryption success toast */
+@keyframes secureAnimation {
+  0% { opacity: 0; transform: translateY(10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.encryption-success-toast {
+  animation: secureAnimation 0.3s ease-out forwards;
+}
+
+/* Fix for action sheet to avoid banner ad */
+.menu-with-ad-padding::part(content) {
+  margin-bottom: 60px;
+}
+
+/* Ensure the action sheet buttons don't get cut off */
+.menu-with-ad-padding ion-backdrop {
+  opacity: 0.4 !important;
+}
+
+/* Make the action sheet buttons more visible */
+.menu-with-ad-padding .action-sheet-button {
+  margin-bottom: 2px;
+}
+
+/* Style for the last item in the action sheet */
+.menu-with-ad-padding .action-sheet-button:last-child {
+  margin-bottom: 70px;
+}

@@ -1,0 +1,53 @@
+#container {
+  height: min-content;
+  overflow: hidden;
+  padding-bottom: 60px; /* Add padding to account for the ad at the bottom */
+}
+
+/* Style for the undo/redo buttons in header */
+ion-toolbar ion-icon[title="Undo"],
+ion-toolbar ion-icon[title="Redo"] {
+  transition: color 0.2s ease-in-out, transform 0.1s ease;
+}
+
+ion-toolbar ion-icon[title="Undo"]:hover,
+ion-toolbar ion-icon[title="Redo"]:hover {
+  color: #ccc;
+}
+
+ion-toolbar ion-icon[title="Undo"]:active,
+ion-toolbar ion-icon[title="Redo"]:active {
+  transform: scale(0.9);
+}
+
+/* Professional Auth Icon Styles */
+.auth-icon {
+  transition: all 0.2s ease;
+  position: relative;
+  filter: drop-shadow(0 1px 2px rgba(0,0,0,0.1));
+  opacity: 0.9;
+}
+
+.auth-icon:hover {
+  transform: translateY(-1px);
+  filter: drop-shadow(0 2px 3px rgba(0,0,0,0.2));
+  opacity: 1;
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.auth-icon:active {
+  transform: scale(0.92);
+  opacity: 0.8;
+}
+
+/* Menu styles to account for banner ad */
+.menu-with-ad-padding {
+  --height: calc(100% - 60px); /* Leave space for ad */
+  margin-bottom: 60px !important; /* Match the height of the ad */
+  --max-height: calc(100% - 60px) !important;
+}
+
+/* Add padding to make sure buttons aren't hidden */
+ion-action-sheet.menu-with-ad-padding .action-sheet-container {
+  padding-bottom: 80px !important;
+}

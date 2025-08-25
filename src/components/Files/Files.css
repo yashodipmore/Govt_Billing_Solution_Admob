@@ -1,0 +1,70 @@
+.file ul{
+	list-style: none;
+	overflow-y: scroll; height:400px;
+}
+
+.file li{
+	font-weight: bold;
+	cursor: pointer;
+	border-bottom: 0.1rem solid #e1e1e1;
+  	padding: 2px 2px;
+  	text-align: left;
+}
+
+.file span{
+	font-size: 12px;
+    color: #9b4dca;
+    margin-right: 20px;
+}
+
+/* File Manager Search Styling */
+.file-manager-modal {
+  --width: 70%;
+  --height: 80%;
+  --border-radius: 10px;
+}
+
+.file-manager-searchbar {
+  padding: 16px;
+  --background: #f8f9fa;
+  --border-radius: 8px;
+  margin: 8px 16px;
+}
+
+.file-manager-content {
+  --padding-top: 0;
+  --padding-bottom: 20px;
+}
+
+.file-manager-header {
+  --background: #3880ff;
+  --color: white;
+}
+
+.no-results-item {
+  --color: #666;
+  font-style: italic;
+  text-align: center;
+}
+
+.file-item {
+  --padding-start: 16px;
+  --padding-end: 16px;
+  --min-height: 56px;
+}
+
+.file-item:hover {
+  --background: #f5f5f5;
+}
+
+/*
+td:first-child,
+th:first-child {
+  padding-left: 0;
+}
+
+td:last-child,
+th:last-child {
+  padding-right: 0;
+}
+606c76*/

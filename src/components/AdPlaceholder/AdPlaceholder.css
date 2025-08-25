@@ -1,0 +1,56 @@
+.ad-placeholder {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: #f4f5f8;
+  border-top: 1px solid #d7d8da;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ad-placeholder-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.ad-header {
+  height: 20px;
+}
+
+.ad-header ion-toolbar {
+  --min-height: 20px;
+}
+
+.ad-header ion-title {
+  font-size: 10px;
+  text-align: center;
+  color: #666;
+}
+
+.ad-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  --background: #eaeaea;
+}
+
+.ad-content p {
+  margin: 0;
+  font-size: 12px;
+  text-align: center;
+  color: #666;
+}
+
+.ad-content .small-text {
+  font-size: 10px;
+  color: #999;
+}
